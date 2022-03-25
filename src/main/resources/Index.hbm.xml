@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping"
+                   package="com.example.postgresqlexercise.model">
+
+    <class name="Index" table="tabela_testowa">
+        <id name="id" type="java.lang.Long" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="kolumna1" column="kolumna1" type="java.lang.String"/>
+        <property name="kolumna2" column="kolumna2" type="java.lang.String"/>
+        <property name="kolumna3" column="kolumna3" type="java.lang.String"/>
+        <property name="kolumna4" column="kolumna4" type="java.lang.Long"/>
+    </class>
+</hibernate-mapping>
