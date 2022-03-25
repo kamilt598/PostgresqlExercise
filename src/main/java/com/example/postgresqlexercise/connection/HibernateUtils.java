@@ -23,7 +23,7 @@ public class HibernateUtils {
 
         try {
             transaction = session.beginTransaction();
-            List indexes = session.createQuery("FROM Index", Index.class).list();
+            List indexes = session.createQuery("FROM Index").list();
             for (Iterator iterator = indexes.iterator(); iterator.hasNext(); ) {
                 Index index = (Index) iterator.next();
                 System.out.println("1: " + index.getKolumna1());

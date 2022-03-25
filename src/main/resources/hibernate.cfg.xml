@@ -7,5 +7,7 @@
         <property name="connection.username">postgres</property>
         <property name="connection.password">root</property>
         <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+        <mapping class="com.example.postgresqlexercise.model.Index"/>
     </session-factory>
 </hibernate-configuration>
