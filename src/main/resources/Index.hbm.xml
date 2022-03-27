@@ -8,9 +8,9 @@
         <id name="id" type="java.lang.Long" column="id">
             <generator class="native"/>
         </id>
-        <property name="kolumna1" column="kolumna1" type="java.lang.String"/>
-        <property name="kolumna2" column="kolumna2" type="java.lang.String"/>
-        <property name="kolumna3" column="kolumna3" type="java.lang.String"/>
-        <property name="kolumna4" column="kolumna4" type="java.lang.Long"/>
+        <property name="column1" column="kolumna1" type="java.lang.String"/>
+        <property name="column2" column="kolumna2" type="java.lang.String"/>
+        <property name="column3" column="kolumna3" type="java.lang.String"/>
+        <property name="column4" column="kolumna4" type="java.lang.Long"/>
     </class>
 </hibernate-mapping>
