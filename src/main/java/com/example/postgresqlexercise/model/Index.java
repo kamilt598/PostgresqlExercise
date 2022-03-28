@@ -69,4 +69,8 @@ public class Index {
     public void setColumn4(Long column4) {
         this.column4 = column4;
     }
+
+    public String printAllColumns() {
+        return id+";"+getColumn1()+";"+getColumn2()+";"+getColumn3()+";"+getColumn4();
+    }
 }

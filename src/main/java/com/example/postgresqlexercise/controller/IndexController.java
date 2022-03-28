@@ -21,8 +21,9 @@ public class IndexController extends HttpServlet {
 
     @RequestMapping(value = "/showResults", method = RequestMethod.GET)
     public String showResults(HttpServletRequest request) {
-        hibernateUtils.listIndexes(request.getParameter("choosen"));
-        request.setAttribute("indexes", hibernateUtils.listToJsp);
+        hibernateUtils.duplicateAndUniqueRecords(request.getParameter("choosen"));
+        request.setAttribute("duplicateIndexes", hibernateUtils.duplicateListToJsp);
+        request.setAttribute("uniqueIndexes", hibernateUtils.uniqueListToJsp);
         return "/showResults";
     }
 }
